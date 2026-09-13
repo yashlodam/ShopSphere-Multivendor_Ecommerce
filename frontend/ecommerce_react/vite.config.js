@@ -1,0 +1,89 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// Helper function to bypass proxy for browser page navigations (HTML requests)
+// This ensures client-side routing works for URLs like /products/women, /products/men, /seller, /admin
+const htmlBypass = (req) => {
+  if (req.headers.accept && req.headers.accept.includes('text/html')) {
+    return '/index.html';
+  }
+};
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            if (id.includes('@mui') || id.includes('@emotion')) {
+              return 'vendor-mui';
+            }
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+              return 'vendor-react';
+            }
+            if (id.includes('@reduxjs') || id.includes('react-redux')) {
+              return 'vendor-redux';
+            }
+            if (id.includes('lucide-react')) {
+              return 'vendor-lucide';
+            }
+            if (id.includes('formik') || id.includes('yup')) {
+              return 'vendor-forms';
+            }
+            return 'vendor-libs';
+          }
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
+
+  server: {
+    port: 5173,
+    proxy: {
+      // Proxy all /api, /auth, /seller, /sellers, /admin, /home calls to Spring Boot
+      // This eliminates CORS issues during development
+      '/api': {
+        target: 'http://localhost:5454',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/auth': {
+        target: 'http://localhost:5454',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/seller': {
+        target: 'http://localhost:5454',
+        changeOrigin: true,
+        secure: false,
+        bypass: htmlBypass,
+      },
+      '/sellers': {
+        target: 'http://localhost:5454',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/admin': {
+        target: 'http://localhost:5454',
+        changeOrigin: true,
+        secure: false,
+        bypass: htmlBypass,
+      },
+      '/home': {
+        target: 'http://localhost:5454',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/products': {
+        target: 'http://localhost:5454',
+        changeOrigin: true,
+        secure: false,
+        bypass: htmlBypass,
+      },
+    },
+  },
+})

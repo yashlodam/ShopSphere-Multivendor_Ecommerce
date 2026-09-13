@@ -1,0 +1,412 @@
+/**
+ * ShopSphere Master Homepage Category Dataset
+ *
+ * Curated high-resolution e-commerce photography from Unsplash.
+ * Covers major departments: Men's Fashion, Women's Fashion, Electronics & Tech,
+ * Home & Living, and Beauty & Grooming.
+ */
+
+export const homeCategories = [
+  // ─── 1. ELECTRONIC HIGHLIGHTS (Tech Row Showcase) ──────────────────────────
+  {
+    categoryId: "laptops",
+    section: "ELECTRIC_CATEGORIES",
+    name: "Ultrabooks & Laptops",
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=85",
+    priority: 1,
+  },
+  {
+    categoryId: "smartphones",
+    section: "ELECTRIC_CATEGORIES",
+    name: "5G Flagship Phones",
+    image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=85",
+    priority: 2,
+  },
+  {
+    categoryId: "headphones",
+    section: "ELECTRIC_CATEGORIES",
+    name: "Noise-Canceling Audio",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=85",
+    priority: 3,
+  },
+  {
+    categoryId: "smart_watches",
+    section: "ELECTRIC_CATEGORIES",
+    name: "AMOLED Smart Watches",
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=85",
+    priority: 4,
+  },
+  {
+    categoryId: "speakers",
+    section: "ELECTRIC_CATEGORIES",
+    name: "Hi-Fi Studio Speakers",
+    image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=85",
+    priority: 5,
+  },
+  {
+    categoryId: "cameras",
+    section: "ELECTRIC_CATEGORIES",
+    name: "Mirrorless & 4K Cameras",
+    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=85",
+    priority: 6,
+  },
+  {
+    categoryId: "televisions",
+    section: "ELECTRIC_CATEGORIES",
+    name: "Smart 4K OLED TVs",
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=600&q=85",
+    priority: 7,
+  },
+  {
+    categoryId: "gaming_consoles",
+    section: "ELECTRIC_CATEGORIES",
+    name: "Next-Gen Gaming Gear",
+    image: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=600&q=85",
+    priority: 8,
+  },
+
+  // ─── 2. HOMEPAGE GRID (Curated Visual Showcase) ─────────────────────────────
+  {
+    categoryId: "women_sarees",
+    section: "GRID",
+    name: "Handloom Banarasi Sarees",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=85",
+    priority: 1,
+  },
+  {
+    categoryId: "men_topwear",
+    section: "GRID",
+    name: "Minimalist Urban Casuals",
+    image: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=800&q=85",
+    priority: 2,
+  },
+  {
+    categoryId: "women_western_wear",
+    section: "GRID",
+    name: "Modern Chic Partywear",
+    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=85",
+    priority: 3,
+  },
+  {
+    categoryId: "men_footwear",
+    section: "GRID",
+    name: "Crafted Leather Sneakers",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=85",
+    priority: 4,
+  },
+  {
+    categoryId: "women_jewellery",
+    section: "GRID",
+    name: "Artisan Gold & Diamond Jewellery",
+    image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=85",
+    priority: 5,
+  },
+
+  // ─── 3. SHOP BY CATEGORY (Department Navigation & Circles) ───────────────────
+
+  // ── Men's Fashion ──
+  {
+    name: "Casual Shirts & Tees",
+    categoryId: "men_topwear",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=85",
+    priority: 1,
+  },
+  {
+    name: "Denim & Jeans",
+    categoryId: "men_bottomwear",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=85",
+    priority: 2,
+  },
+  {
+    name: "Hoodies & Pullovers",
+    categoryId: "men_hoodies",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=85",
+    priority: 3,
+  },
+  {
+    name: "Jackets & Coats",
+    categoryId: "men_jackets",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=85",
+    priority: 4,
+  },
+  {
+    name: "Sneakers & Kicks",
+    categoryId: "men_footwear",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=85",
+    priority: 5,
+  },
+  {
+    name: "Formal Shirts",
+    categoryId: "men_formal_shirts",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=600&q=85",
+    priority: 6,
+  },
+  {
+    name: "Tailored Blazers",
+    categoryId: "men_suits_blazers",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=85",
+    priority: 7,
+  },
+  {
+    name: "Festive Kurta Sets",
+    categoryId: "men_festive_wear",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=85",
+    priority: 8,
+  },
+  {
+    name: "Men's Luxury Watches",
+    categoryId: "men_watches_accessories",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=600&q=85",
+    priority: 9,
+  },
+
+  // ── Women's Fashion ──
+  {
+    name: "Western Wear & Tops",
+    categoryId: "women_western_wear",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=600&q=85",
+    priority: 10,
+  },
+  {
+    name: "Elegant Dresses",
+    categoryId: "women_dresses",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=85",
+    priority: 11,
+  },
+  {
+    name: "Banarasi & Silk Sarees",
+    categoryId: "women_sarees",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=85",
+    priority: 12,
+  },
+  {
+    name: "Embroidered Kurtas",
+    categoryId: "women_kurtas",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=85",
+    priority: 13,
+  },
+  {
+    name: "Artisan Jewellery",
+    categoryId: "women_jewellery",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=85",
+    priority: 14,
+  },
+  {
+    name: "Designer Handbags",
+    categoryId: "women_handbags",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=85",
+    priority: 15,
+  },
+  {
+    name: "Heels & Stilettos",
+    categoryId: "women_footwear",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=85",
+    priority: 16,
+  },
+  {
+    name: "Athleisure & Tights",
+    categoryId: "women_activewear",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=85",
+    priority: 17,
+  },
+
+  // ── Electronics & Gadgets ──
+  {
+    name: "Smartphones & Mobiles",
+    categoryId: "smartphones",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=85",
+    priority: 18,
+  },
+  {
+    name: "Ultrabooks & Laptops",
+    categoryId: "laptops",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=85",
+    priority: 19,
+  },
+  {
+    name: "Wireless Audio",
+    categoryId: "headphones",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=85",
+    priority: 20,
+  },
+  {
+    name: "Smart Watches",
+    categoryId: "smart_watches",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=85",
+    priority: 21,
+  },
+  {
+    name: "Bluetooth Speakers",
+    categoryId: "speakers",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=85",
+    priority: 22,
+  },
+  {
+    name: "DSLR & Action Cameras",
+    categoryId: "cameras",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=85",
+    priority: 23,
+  },
+
+  // ── Home & Living ──
+  {
+    name: "Beds & Mattresses",
+    categoryId: "home_beds",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=85",
+    priority: 24,
+  },
+  {
+    name: "Living Room Sofas",
+    categoryId: "home_furniture",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=85",
+    priority: 25,
+  },
+  {
+    name: "Lighting & Lamps",
+    categoryId: "home_lighting",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=600&q=85",
+    priority: 26,
+  },
+  {
+    name: "Indoor Plants & Pots",
+    categoryId: "home_garden_outdoor",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=85",
+    priority: 27,
+  },
+  {
+    name: "Kitchen & Dining Sets",
+    categoryId: "home_kitchen_dining",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=85",
+    priority: 28,
+  },
+  {
+    name: "Wall Decor & Accents",
+    categoryId: "home_decor_accents",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=600&q=85",
+    priority: 29,
+  },
+
+  // ── Beauty, Fragrance & Grooming ──
+  {
+    name: "Luxury Fragrances",
+    categoryId: "luxury_fragrances",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=85",
+    priority: 30,
+  },
+  {
+    name: "Skincare Serums & Glow",
+    categoryId: "women_beauty_personal_care",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=85",
+    priority: 31,
+  },
+  {
+    name: "Haircare & Oils",
+    categoryId: "haircare_styling",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=85",
+    priority: 32,
+  },
+  {
+    name: "Makeup & Cosmetics",
+    categoryId: "makeup_cosmetics",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=85",
+    priority: 33,
+  },
+  {
+    name: "Men's Beard & Grooming",
+    categoryId: "men_grooming_essentials",
+    section: "SHOP_BY_CATEGORIES",
+    image: "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=600&q=85",
+    priority: 34,
+  },
+
+  // ─── 4. PROMOTIONAL DEALS (Homepage Deal Carousels) ─────────────────────────
+  {
+    name: "Casual T-Shirts",
+    categoryId: "men_topwear",
+    section: "DEALS",
+    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=85",
+    priority: 1,
+  },
+  {
+    name: "Cocktail Dresses",
+    categoryId: "women_dresses",
+    section: "DEALS",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=85",
+    priority: 2,
+  },
+  {
+    name: "Wireless ANC Audio",
+    categoryId: "headphones",
+    section: "DEALS",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=85",
+    priority: 3,
+  },
+  {
+    name: "Banarasi Silk Sarees",
+    categoryId: "women_sarees",
+    section: "DEALS",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=85",
+    priority: 4,
+  },
+  {
+    name: "Smartwatches & Bands",
+    categoryId: "smart_watches",
+    section: "DEALS",
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=85",
+    priority: 5,
+  },
+  {
+    name: "Cotton Formal Shirts",
+    categoryId: "men_formal_shirts",
+    section: "DEALS",
+    image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=600&q=85",
+    priority: 6,
+  },
+  {
+    name: "Signature Perfumes",
+    categoryId: "luxury_fragrances",
+    section: "DEALS",
+    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=85",
+    priority: 7,
+  },
+  {
+    name: "Lounge Armchairs",
+    categoryId: "home_furniture",
+    section: "DEALS",
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=85",
+    priority: 8,
+  },
+];
