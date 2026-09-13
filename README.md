@@ -21,7 +21,7 @@
 | :--- | :--- | :--- |
 | **🌐 Production Web App** | [https://shopsphereecommerceweb.vercel.app/](https://shopsphereecommerceweb.vercel.app/) | Live production build deployed on Vercel Edge Network |
 | **📖 Swagger OpenAPI Docs** | `http://localhost:5454/swagger-ui/index.html` | Interactive REST API documentation and sandbox testing |
-| **📦 GitHub Monorepo** | [https://github.com/yashlodam/ShopSphere](https://github.com/yashlodam/ShopSphere) | Single unified monorepo with 100% commit history preserved |
+| **📦 GitHub Monorepo** | [https://github.com/yashlodam/ShopSphere-Multivendor_Ecommerce](https://github.com/yashlodam/ShopSphere-Multivendor_Ecommerce) | Single unified monorepo with 100% commit history preserved |
 
 ---
 
